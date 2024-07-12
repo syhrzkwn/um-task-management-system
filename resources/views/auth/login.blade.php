@@ -14,7 +14,7 @@
                         <p class="mb-3">Universiti Malaya | Task Management System</p>
                         <div class="form-floating mb-2">
                             <input id="email" type="email" class="form-control bg-light @error('email') is-invalid @enderror" id="floatingInput" placeholder="name@example.com" name="email" value="{{ old('email') }}" autocomplete="email" autofocus>
-                            <label for="floatingInput">Email Address <span class="text-danger">*</span></label>
+                            <label for="floatingInput">Email Address</label>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-floating mb-3">
                             <input id="password" type="password" class="form-control bg-light @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password" name="password" autocomplete="current-password">
-                            <label for="floatingPassword">Password <span class="text-danger">*</span></label>
+                            <label for="floatingPassword">Password</label>
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

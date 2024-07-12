@@ -49,13 +49,13 @@
                         </div>
                         @can('read.tasks')
                         <div class="mt-3">
-                            <a href="#" class="text-decoration-none">
+                            <a href="{{ route('project.index') }}" class="text-decoration-none">
                                 <div data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <i class="bi bi-clipboard-data icon align-middle ms-2"></i>
-                                    @if (Auth::user()->user_type == 'Admin')
-                                        <span class="ms-3 text-dark">Tasks</span>
+                                    <i class="bi bi-inboxes icon align-middle ms-2"></i>
+                                    @if (Auth::user()->user_type == \App\Models\User::TYPE_ADMIN)
+                                        <span class="ms-3 text-dark">Projects</span>
                                     @else
-                                        <span class="ms-3 text-dark">My Tasks</span>
+                                        <span class="ms-3 text-dark">My Projects</span>
                                     @endif
                                 </div>
                             </a>
