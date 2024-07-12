@@ -27,7 +27,7 @@
                     <form action="{{ route('staff.store') }}" method="POST">
                         @csrf
                         <div class="form-group col-12 col-md-6 mb-3">
-                            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control bg-light @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}">
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
@@ -36,7 +36,7 @@
                             @enderror
                         </div>
                         <div class="form-group col-12 col-md-6 mb-3">
-                            <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                            <label for="phone" class="form-label">Phone Number</label>
                             <input type="tel" class="form-control bg-light @error('phone') is-invalid @enderror" id="phone" name="phone" value="{{ old('phone') }}">
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
                             @enderror
                         </div>
                         <div class="form-group col-12 col-md-6 mb-3">
-                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control bg-light @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}">
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -54,7 +54,7 @@
                             @enderror
                         </div>
                         <div class="form-group col-12 col-md-6 mb-3">
-                            <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                            <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control bg-light @error('password') is-invalid @enderror" id="password" name="password">
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -63,7 +63,7 @@
                             @enderror
                         </div>
                         <div class="form-group col-12 col-md-6 mb-4">
-                            <label for="password-confirm" class="form-label">Password Confirmation <span class="text-danger">*</span></label>
+                            <label for="password-confirm" class="form-label">Password Confirmation</label>
                             <input type="password" class="form-control bg-light" id="password-confirm" name="password_confirmation">
                         </div>
                         <button type="submit" class="btn btn-primary">Register Staff</button>

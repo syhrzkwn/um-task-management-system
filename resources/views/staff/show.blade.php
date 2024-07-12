@@ -26,15 +26,15 @@
 
                     <div class="form-group col-12 col-md-6 mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" value="{{ $staff->name }}" class="form-control" id="name" readonly>
+                        <input type="text" value="{{ $staff->name }}" class="form-control bg-light" id="name" readonly>
                     </div>
                     <div class="form-group col-12 col-md-6 mb-3">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" value="{{ $staff->phone }}" class="form-control" id="phone" readonly>
+                        <input type="tel" value="{{ $staff->phone }}" class="form-control bg-light" id="phone" readonly>
                     </div>
                     <div class="form-group col-12 col-md-6 mb-3">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" value="{{ $staff->email }}" class="form-control" id="email" readonly>
+                        <input type="email" value="{{ $staff->email }}" class="form-control bg-light" id="email" readonly>
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <p class="mb-0"><span class="me-1">Status</span>

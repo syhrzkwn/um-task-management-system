@@ -30,7 +30,7 @@
                             @method('PATCH')
                             <div class="form-group col-12 col-md-6 mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" value="{{ (old('name')) ? old('name') : $staff->name }}" class="form-control @error('name') is-invalid @enderror" id="name" name="name">
+                                <input type="text" value="{{ (old('name')) ? old('name') : $staff->name }}" class="form-control bg-light @error('name') is-invalid @enderror" id="name" name="name">
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -39,7 +39,7 @@
                             </div>
                             <div class="form-group col-12 col-md-6 mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" value="{{ (old('phone')) ? old('phone') : $staff->phone }}" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone">
+                                <input type="tel" value="{{ (old('phone')) ? old('phone') : $staff->phone }}" class="form-control bg-light @error('phone') is-invalid @enderror" id="phone" name="phone">
                                 @error('phone')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="form-group col-12 col-md-6 mb-3">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" value="{{ (old('email')) ? old('email') : $staff->email }}" class="form-control @error('email') is-invalid @enderror" id="email" name="email">
+                                <input type="email" value="{{ (old('email')) ? old('email') : $staff->email }}" class="form-control bg-light @error('email') is-invalid @enderror" id="email" name="email">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -86,7 +86,7 @@
                             @method('PUT')
                             <div class="form-group col-12 col-md-6 mb-3">
                                 <label class="form-label" for="password">New Password <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control @error('password') is-invalid @enderror" id="password" name="password">
+                                <input type="text" class="form-control bg-light @error('password') is-invalid @enderror" id="password" name="password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="form-group col-12 col-md-6 mb-4">
                                 <label class="form-label" for="password-confirm">New Password Confirmation <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="password-confirm" name="password_confirmation">
+                                <input type="text" class="form-control bg-light" id="password-confirm" name="password_confirmation">
                             </div>
                             <button type="submit" class="btn btn-primary">Change Password</button>
                         </form>
