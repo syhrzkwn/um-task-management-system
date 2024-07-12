@@ -26,6 +26,12 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::firstOrCreate(['name' => 'update.staffs']);
         Permission::firstOrCreate(['name' => 'delete.staffs']);
 
+        // create permissions for manage projects
+        Permission::firstOrCreate(['name' => 'create.projects']);
+        Permission::firstOrCreate(['name' => 'read.projects']);
+        Permission::firstOrCreate(['name' => 'update.projects']);
+        Permission::firstOrCreate(['name' => 'delete.projects']);
+
         // create permissions for manage tasks
         Permission::firstOrCreate(['name' => 'create.tasks']);
         Permission::firstOrCreate(['name' => 'read.tasks']);
@@ -38,6 +44,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         $staffRole = Role::firstOrCreate(['name' => 'Staff']);
         $staffRole->givePermissionTo([
+            'read.projects',
             'read.tasks',
             'update.tasks',
         ]);
